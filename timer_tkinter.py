@@ -27,7 +27,6 @@ def start():
         while duration:
             m, s = divmod(int(duration), 60)
             h, m = divmod(m, 60)  # divmod(a, b) == (b//a, b)
-            print(f'{h = }: {m = }: {s = }')
             min_sec_format = f'{h:02}:{m:02}:{s:02}'
             count_digit.configure(text=min_sec_format)
             count_digit.update()  # обновляем текст
